@@ -95,6 +95,10 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 
 
+# things to do
+- click efect on button using box-shadow property
+
 # Objectives for this challenges
 - use sass
 - learn to use grid ( for the buttons)
+- learn to use mixins for media queries: https://www.youtube.com/watch?v=1334bFDilgk&ab_channel=FrontDev
