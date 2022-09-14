@@ -101,12 +101,17 @@ This challenge is completely free. Please share it with anyone who will find it 
 # Objectives for this challenges
 - use sass
 - learn to use grid ( for the buttons)
-- learn to use mixins for media queries: https://www.youtube.com/watch?v=1334bFDilgk&ab_channel=FrontDev
+- learn to use mixins for responsive(media queries): https://www.youtube.com/watch?v=1334bFDilgk&ab_channel=FrontDev
 
 # Resources
 - https://www.youtube.com/watch?v=j59qQ7YWLxw&ab_channel=WebDevSimplified (how to build a calculator with js)
+- https://scalablecss.com/bem-nesting-grandchild-elements/ (what to do with nested elements in BEM)
+- https://www.javascripttutorial.net/es6/javascript-class/#:~:text=A%20JavaScript%20class%20is%20a,classes%20are%20just%20special%20functions. (js classes)
+- https://stackoverflow.com/questions/19030742/difference-between-innertext-innerhtml-and-value#:~:text=Both%20innerText%20and%20innerHTML%20return,content%20of%20the%20HTML%20element. (difference between innerHTML(innerHTML renders html code if its inside a string) and innerText(not render html code inside the string))
 
 # what I learn in the process
 - first use of grid for keys matrix
-- use of data attributes to get all the keys easily
-- use of javascript class with ES6 sintax
+- the use of data attributes to get all the keys easily
+- the use of javascript class with ES6 sintax
+- how to name nested elements with BEM grandchild elements aproach (insted of chaining elements)
+- use js as a module type, and the necesity of a web server for use this js as modules
