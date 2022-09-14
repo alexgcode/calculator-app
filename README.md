@@ -102,3 +102,11 @@ This challenge is completely free. Please share it with anyone who will find it 
 - use sass
 - learn to use grid ( for the buttons)
 - learn to use mixins for media queries: https://www.youtube.com/watch?v=1334bFDilgk&ab_channel=FrontDev
+
+# Resources
+- https://www.youtube.com/watch?v=j59qQ7YWLxw&ab_channel=WebDevSimplified (how to build a calculator with js)
+
+# what I learn in the process
+- first use of grid for keys matrix
+- use of data attributes to get all the keys easily
+- use of javascript class with ES6 sintax
