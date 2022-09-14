@@ -13,9 +13,29 @@ const calc = new Calculator(previousOperandTextElement.innerText, currentOperand
 numberButtons.forEach(button => {   //for each button execute the function
     button.addEventListener('click', () => {    //every time there is a click in the button execute the function
         calc.addNumber(button.innerText);
-        calc.updateDisplay(currentOperandTextElement);
+        calc.updateDisplay(currentOperandTextElement,previousOperandTextElement);
         console.log(calc.currentOperand);
     });
 });
 
-console.log(previousOperandTextElement);
+operationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calc.chooseOperation(button.innerText);
+        calc.updateDisplay(currentOperandTextElement,previousOperandTextElement);
+    });
+});
+
+equalButton.addEventListener('click', (button) => {
+    calc.compute();
+    calc.updateDisplay(currentOperandTextElement,previousOperandTextElement);
+});
+
+resetButton.addEventListener('click', (button) => {
+    calc.reset();
+    calc.updateDisplay(currentOperandTextElement,previousOperandTextElement);
+});
+
+deleteButton.addEventListener('click', (button) => {
+    calc.delete();
+    calc.updateDisplay(currentOperandTextElement,previousOperandTextElement);
+});
