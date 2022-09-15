@@ -18,11 +18,20 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="body">
 
   <div class="calculator">
     <div class="calculator__header">
-
+      <div class="calculator__name">calc</div>
+      <div class="calculator__theme-control"> 
+        <div class="multi-radio-toggle multi-radio-toggle--two">
+          <input type="radio" id="mt-first1" name="toggle_option1" checked>
+          <input type="radio" id="mt-second1" name="toggle_option1">
+          <label for="mt-first1" class="multi-radio-toggle__label"><p>Mild</p></label>
+          <label for="mt-second1" class="multi-radio-toggle__label"><p>Spicy</p></label>
+          <div class="multi-radio-toggle__slide-bg"></div>
+        </div>
+      </div>
     </div>
     <div class="calculator__display">
       <div class="calculator__previous-operand"></div>
