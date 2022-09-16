@@ -1,4 +1,7 @@
 .multi-radio-toggle{
+
+    $t: &;
+    
     position:relative;
     background: #eee;
     margin: 20px auto 80px;
@@ -22,7 +25,23 @@
         -o-transition: all .4s ease;
         -ms-transition: all .4s ease;
         transition: all .4s ease;
-      }
+
+        #{$t} input:checked ~ & {
+            background: #db159e;
+        }
+
+        #{$t} input:nth-child(1):checked ~ & {
+            left: -3px;
+        }
+
+        #{$t} input:nth-child(2):checked ~ & {
+            left: 27px;
+        }
+
+        #{$t} input:nth-child(3):checked ~ & {
+            left: 63px;
+        }
+    }
 
     &__label{
 
@@ -57,31 +76,31 @@
             width: 80px;
             text-align:left;
         }
+
+        &:nth-of-type(2){
+            text-align:center;
+            width: 40px;
+            left: 50%;
+            margin-left: -20px;
+        }
+
+        &:nth-of-type(3){
+            right: -55px;
+            text-align:right;
+            width: 80px;
+        }
+
+        &--align-bottom p {
+            display:block;
+            margin-top: 30px;
+        }
     }
 
-    &--two{
-        width: 60px;
+    &--three{
+        width: 90px;
     }
-}
 
-.multi-radio-toggle input[type=radio]{
-    display: none;
-}
-
-.multi-radio-toggle--two .multi-radio-toggle__label:nth-of-type(2){
-    right: -55px;
-    text-align:right;
-    width: 80px;
-}
-
-.multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg{
-	background: #db159e;
-}
-
-.multi-radio-toggle input:nth-child(1):checked ~ .multi-radio-toggle__slide-bg{
-	left: -3px;
-}
-
-.multi-radio-toggle input:nth-child(2):checked ~ .multi-radio-toggle__slide-bg{
-	left: 27px;
+    & input[type=radio]{
+        display: none;
+    }
 }

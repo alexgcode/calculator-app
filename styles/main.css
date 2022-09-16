@@ -124,6 +124,18 @@
   border-radius: 50px;
   transition: all 0.4s ease;
 }
+.multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg {
+  background: #db159e;
+}
+.multi-radio-toggle input:nth-child(1):checked ~ .multi-radio-toggle__slide-bg {
+  left: -3px;
+}
+.multi-radio-toggle input:nth-child(2):checked ~ .multi-radio-toggle__slide-bg {
+  left: 27px;
+}
+.multi-radio-toggle input:nth-child(3):checked ~ .multi-radio-toggle__slide-bg {
+  left: 63px;
+}
 .multi-radio-toggle__label {
   position: absolute;
   z-index: 99;
@@ -151,30 +163,26 @@
   width: 80px;
   text-align: left;
 }
-.multi-radio-toggle--two {
-  width: 60px;
+.multi-radio-toggle__label:nth-of-type(2) {
+  text-align: center;
+  width: 40px;
+  left: 50%;
+  margin-left: -20px;
 }
-
-.multi-radio-toggle input[type=radio] {
-  display: none;
-}
-
-.multi-radio-toggle--two .multi-radio-toggle__label:nth-of-type(2) {
+.multi-radio-toggle__label:nth-of-type(3) {
   right: -55px;
   text-align: right;
   width: 80px;
 }
-
-.multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg {
-  background: #db159e;
+.multi-radio-toggle__label--align-bottom p {
+  display: block;
+  margin-top: 30px;
 }
-
-.multi-radio-toggle input:nth-child(1):checked ~ .multi-radio-toggle__slide-bg {
-  left: -3px;
+.multi-radio-toggle--three {
+  width: 90px;
 }
-
-.multi-radio-toggle input:nth-child(2):checked ~ .multi-radio-toggle__slide-bg {
-  left: 27px;
+.multi-radio-toggle input[type=radio] {
+  display: none;
 }
 
 .body {

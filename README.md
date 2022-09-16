@@ -115,6 +115,7 @@ This challenge is completely free. Please share it with anyone who will find it 
 - the use of javascript class with ES6 sintax
 - how to name nested elements with BEM grandchild elements aproach (insted of chaining elements)
 - use js as a module type, and the necesity of a web server for use this js as modules
+- use of sass interpolation and variables for grandparent selector (https://codeburst.io/how-to-do-sass-grandparent-selectors-b8666dcaf961)
 
 # TODO
 - change themes toggle: https://codepen.io/renddrew/pen/bRomab
