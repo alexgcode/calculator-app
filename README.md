@@ -116,8 +116,11 @@ This challenge is completely free. Please share it with anyone who will find it 
 - how to name nested elements with BEM grandchild elements aproach (insted of chaining elements)
 - use js as a module type, and the necesity of a web server for use this js as modules
 - use of sass interpolation and variables for grandparent selector (https://codeburst.io/how-to-do-sass-grandparent-selectors-b8666dcaf961)
+- to pass a sass variable to a css variable we need to use #{$sass-variable}    (https://github.com/sass/sass/issues/1128) 
+                                                                                (https://sass-lang.com/documentation/breaking-changes/css-vars)
+                                                                                (https://medium.com/@xzyfer/why-node-sass-broke-your-code-and-semver-1b3e409c57b9)
 
 # TODO
-- change themes toggle: https://codepen.io/renddrew/pen/bRomab
+- change themes toggle: https://codepen.io/renddrew/pen/bRomab (https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder)
 - responsive 
 - ajust the design

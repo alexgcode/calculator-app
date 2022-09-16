@@ -11,6 +11,8 @@
     border-radius: 50px;
     height: 30px;
     box-shadow:inset 1px 1px 4px rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content:space-between;
 
     &__slide-bg{
         width: 20px;
@@ -27,15 +29,15 @@
         transition: all .4s ease;
 
         #{$t} input:checked ~ & {
-            background: $key-red-bg;
+            background: $key-colored-1-bg;
         }
 
         #{$t} input:nth-child(1):checked ~ & {
-            left: -3px;
+            left: 10px;
         }
 
         #{$t} input:nth-child(2):checked ~ & {
-            left: 27px;
+            left: 40px;
         }
 
         #{$t} input:nth-child(3):checked ~ & {
@@ -53,7 +55,6 @@
         line-height: 30px;
         font-size: 16px;
         
-        height: 30px;
         margin: 0;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
@@ -65,18 +66,21 @@
             margin:0;
             line-height: 30px;
             font-size: 16px;
+            width: 20px;
+            height: 50px;
         }
 
         &:nth-of-type(1){
             top: -25px;
             text-align:left;
             width: 10px;
+            height: 30px;
         }
 
         &:nth-of-type(2){
             text-align:center;
             top: -25px;
-            left: 50%;
+            left: 45%;
             width: 10px;
         }
 
@@ -87,10 +91,6 @@
             right: 5px;
         }
 
-        &--align-bottom p {
-            display:block;
-            margin-top: 30px;
-        }
     }
 
     & input[type=radio]{
