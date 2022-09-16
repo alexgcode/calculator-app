@@ -3,7 +3,7 @@
     $t: &;
     
     position:relative;
-    background: #eee;
+    background: $element-bg;
     margin: 20px auto 80px;
     padding: 0 !important;
     -webkit-border-radius: 50px;
@@ -13,10 +13,10 @@
     box-shadow:inset 1px 1px 4px rgba(0, 0, 0, 0);
 
     &__slide-bg{
-        width: 36px;
-        height: 36px;
+        width: 20px;
+        height: 20px;
         position: absolute;
-        top: -3px;
+        top: 5px;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         border-radius: 50px;
@@ -27,7 +27,7 @@
         transition: all .4s ease;
 
         #{$t} input:checked ~ & {
-            background: #db159e;
+            background: $key-red-bg;
         }
 
         #{$t} input:nth-child(1):checked ~ & {
@@ -44,7 +44,7 @@
     }
 
     &__label{
-
+        color: white;
         position:absolute;
         z-index:99;
 
@@ -53,17 +53,13 @@
         line-height: 30px;
         font-size: 16px;
         
-        width: 30px;
         height: 30px;
         margin: 0;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         border-radius: 50px;
         cursor: pointer;
-        z-index: 1;
         text-align: center;
-        width: 70px;
-
         & p{
             display:block;
             margin:0;
@@ -72,22 +68,23 @@
         }
 
         &:nth-of-type(1){
-            left: -55px;
-            width: 80px;
+            top: -25px;
             text-align:left;
+            width: 10px;
         }
 
         &:nth-of-type(2){
             text-align:center;
-            width: 40px;
+            top: -25px;
             left: 50%;
-            margin-left: -20px;
+            width: 10px;
         }
 
         &:nth-of-type(3){
-            right: -55px;
             text-align:right;
-            width: 80px;
+            width: 10px;
+            top: -25px;
+            right: 5px;
         }
 
         &--align-bottom p {
@@ -96,11 +93,12 @@
         }
     }
 
+    & input[type=radio]{
+        display: none;
+    }
+    
     &--three{
         width: 90px;
     }
 
-    & input[type=radio]{
-        display: none;
-    }
 }
