@@ -3,22 +3,72 @@
     $t: &;
     
     position:relative;
-    background: $element-bg;
+    background: var(--element-bg);
     margin: 20px auto 80px;
-    padding: 0 !important;
+    padding: 0 ;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
-    height: 30px;
+    height: 20px;
     box-shadow:inset 1px 1px 4px rgba(0, 0, 0, 0);
     display: flex;
-    justify-content:space-between;
+    justify-content:center ;
 
+    &__label{
+        color: var(--display-color);
+        position:absolute;
+        z-index:99;
+
+        //display:block;
+        //margin:0 auto;
+        //line-height: 30px;
+        font-size: 16px;
+        
+        //-webkit-border-radius: 50px;
+        //-moz-border-radius: 50px;
+        //border-radius: 50px;
+        cursor: pointer;
+        //text-align: center;
+        
+        &:nth-of-type(1){
+            top: -35px;
+            //text-align:left;
+            left:8px;
+            width: 10px;
+            height: 30px;
+        }
+
+        &:nth-of-type(2){
+            //text-align:center;
+            top: -35px;
+            //left: 45%;
+            width: 10px;
+        }
+
+        &:nth-of-type(3){
+            //text-align:right;
+            width: 10px;
+            top: -35px;
+            right: 8px;
+        }
+
+        & p{
+            display:block;
+            //margin:0;
+            //line-height: 30px;
+            font-size: 16px;
+            //width: 20px;
+            height: 50px;
+        }
+
+    }
+
+    
     &__slide-bg{
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         position: absolute;
-        top: 5px;
+        top: 2.5px;
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         border-radius: 50px;
@@ -29,68 +79,20 @@
         transition: all .4s ease;
 
         #{$t} input:checked ~ & {
-            background: $key-colored-1-bg;
+            background: var(--key-colored-2-bg);
         }
 
         #{$t} input:nth-child(1):checked ~ & {
-            left: 10px;
+            left: 5px;
         }
 
         #{$t} input:nth-child(2):checked ~ & {
-            left: 40px;
+            left: 28px;
         }
 
         #{$t} input:nth-child(3):checked ~ & {
-            left: 63px;
+            left: 49px;
         }
-    }
-
-    &__label{
-        color: white;
-        position:absolute;
-        z-index:99;
-
-        display:block;
-        margin:0;
-        line-height: 30px;
-        font-size: 16px;
-        
-        margin: 0;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        border-radius: 50px;
-        cursor: pointer;
-        text-align: center;
-        & p{
-            display:block;
-            margin:0;
-            line-height: 30px;
-            font-size: 16px;
-            width: 20px;
-            height: 50px;
-        }
-
-        &:nth-of-type(1){
-            top: -25px;
-            text-align:left;
-            width: 10px;
-            height: 30px;
-        }
-
-        &:nth-of-type(2){
-            text-align:center;
-            top: -25px;
-            left: 45%;
-            width: 10px;
-        }
-
-        &:nth-of-type(3){
-            text-align:right;
-            width: 10px;
-            top: -25px;
-            right: 5px;
-        }
-
     }
 
     & input[type=radio]{
@@ -98,7 +100,7 @@
     }
     
     &--three{
-        width: 90px;
+        width: 70px;
     }
 
 }

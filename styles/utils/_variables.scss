@@ -3,28 +3,43 @@ $main-theme-1: hsl(222, 26%, 31%);
 $element-theme-1: hsl(223, 31%, 20%);
 $display-theme-1: hsl(224, 36%, 15%);
 
-$key-theme-1: hsl(225, 21%, 49%);
-$key-shadow-theme-1: hsl(224, 28%, 35%);
+$key-theme-1:  hsl(30, 25%, 89%);
+$key-shadow-theme-1:  hsl(28, 16%, 65%);
 
-$key-colored-1-theme-1: hsl(6, 63%, 50%);
-$key-colored-1-shadow-theme-1: hsl(6, 70%, 34%);
+$key-colored-1-theme-1:  hsl(225, 21%, 49%);
+$key-colored-1-shadow-theme-1:  hsl(224, 28%, 35%);
 
-$key-colored-2-theme-1: hsl(30, 25%, 89%);
-$key-colored-2-shadow-theme-1: hsl(28, 16%, 65%);
+$key-colored-2-theme-1: hsl(6, 63%, 50%);
+$key-colored-2-shadow-theme-1: hsl(6, 70%, 34%);
 
 /* theme 2 */
 $main-theme-2: hsl(0, 0%, 90%);
 $element-theme-2: hsl(0, 5%, 81%);
 $display-theme-2: hsl(0, 0%, 93%);
 
-$key-theme-2: hsl(185, 42%, 37%);
-$key-shadow-theme-2: hsl(185, 58%, 25%);
+$key-theme-2:  hsl(45, 7%, 89%);
+$key-shadow-theme-2:  hsl(35, 11%, 61%);
 
-$key-colored-1-theme-2: hsl(25, 98%, 40%);
-$key-colored-1-shadow-theme-2: hsl(25, 99%, 27%);
+$key-colored-1-theme-2: hsl(185, 42%, 37%);
+$key-colored-1-shadow-theme-2: hsl(185, 58%, 25%);
 
-$key-colored-2-theme-2: hsl(45, 7%, 89%);
-$key-colored-2-shadow-theme-2: hsl(35, 11%, 61%);
+$key-colored-2-theme-2: hsl(25, 98%, 40%);
+$key-colored-2-shadow-theme-2: hsl(25, 99%, 27%);
+
+/* theme 3 */
+$main-theme-3: hsl(268, 75%, 9%);
+$element-theme-3: hsl(268, 71%, 12%);
+$display-theme-3: hsl(268, 71%, 12%);
+
+$key-theme-3:   hsl(268, 47%, 21%);
+$key-shadow-theme-3:   hsl(290, 70%, 36%);
+
+$key-colored-1-theme-3: hsl(281, 89%, 26%);
+$key-colored-1-shadow-theme-3: hsl(285, 91%, 52%);
+
+$key-colored-2-theme-3:  hsl(176, 100%, 44%);
+$key-colored-2-shadow-theme-3:  hsl(177, 92%, 70%);
+ 
 
 /* fonts */
 $font-size: 32px;
@@ -36,50 +51,69 @@ $font-white: hsl(0, 0, 100%);
 
 
 /* default value global variables */
-$main-bg: black;
-$element-bg: black;
-$display-bg: black;
-
-$key-bg: black;
-$key-shadow: black;
-
-$key-colored-1-bg: black;
-$key-colored-1-shadow: black;
-
-$key-colored-2-bg: black;
-$key-colored-2-shadow: black;
 
 :root {
     --main-bg: black;
+    --element-bg: black;
+    --display-bg: black;
+    --display-color: black;
+    --key-bg: black;
+    --key-shadow: black;
+    --key-text-color: black;
+    --key-colored-1-bg: black;
+    --key-colored-1-shadow: black;
+    --key-colored-2-bg: black;
+    --key-colored-2-shadow: black;
 }
 
 
 .body.theme-1 {
     --main-bg: #{$main-theme-1};    //hsl(222, 26%, 31%);
-    $element-bg: #{$element-theme-1};
-    $display-bg: #{$display-theme-1};
+    --element-bg: #{$element-theme-1};
+    --display-bg: #{$display-theme-1};
+    --display-color: white;
 
-    $key-bg: #{$key-theme-1};
-    $key-shadow: #{$key-shadow-theme-1};
+    --key-bg: #{$key-theme-1};
+    --key-shadow: #{$key-shadow-theme-1};
+    --key-text-color: black;
 
-    $key-colored-1-bg: #{key-colored-1-theme-1};
-    $key-colored-1-shadow: #{$key-colored-1-shadow-theme-1};
+    --key-colored-1-bg: #{$key-colored-1-theme-1};
+    --key-colored-1-shadow: #{$key-colored-1-shadow-theme-1};
 
-    $key-colored-2-bg: #{$key-colored-2-theme-1};
-    $key-colored-2-shadow: #{$key-colored-2-shadow-theme-1};
+    --key-colored-2-bg: #{$key-colored-2-theme-1};
+    --key-colored-2-shadow: #{$key-colored-2-shadow-theme-1};
 }
 
 .body.theme-2 {
     --main-bg: #{$main-theme-2};
-    $element-bg: #{$element-theme-2};
-    $display-bg: #{$display-theme-2};
+    --element-bg: #{$element-theme-2};
+    --display-bg: #{$display-theme-2};
+    --display-color: black;
 
-    $key-bg: #{$key-theme-2};
-    $key-shadow: #{$key-shadow-theme-2};
+    --key-bg: #{$key-theme-2};
+    --key-shadow: #{$key-shadow-theme-2};
+    --key-text-color: black;
 
-    $key-colored-1-bg: #{$key-colored-1-theme-2};
-    $key-colored-1-shadow: #{$key-colored-1-shadow-theme-2};
+    --key-colored-1-bg: #{$key-colored-1-theme-2};
+    --key-colored-1-shadow: #{$key-colored-1-shadow-theme-2};
 
-    $key-colored-2-bg: #{$key-colored-2-theme-2};
-    $key-colored-2-shadow: #{$key-colored-2-shadow-theme-2};
+    --key-colored-2-bg: #{$key-colored-2-theme-2};
+    --key-colored-2-shadow: #{$key-colored-2-shadow-theme-2};
+}
+
+.body.theme-3 {
+    --main-bg: #{$main-theme-3};
+    --element-bg: #{$element-theme-3};
+    --display-bg: #{$display-theme-3};
+    --display-color: #{$font-yellow};
+
+    --key-bg: #{$key-theme-3};
+    --key-shadow: #{$key-shadow-theme-3};
+    --key-text-color: #{$font-yellow};
+
+    --key-colored-1-bg: #{$key-colored-1-theme-3};
+    --key-colored-1-shadow: #{$key-colored-1-shadow-theme-3};
+
+    --key-colored-2-bg: #{$key-colored-2-theme-3};
+    --key-colored-2-shadow: #{$key-colored-2-shadow-theme-3};
 }

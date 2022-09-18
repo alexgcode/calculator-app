@@ -1,5 +1,8 @@
 import { Calculator } from './models.js';
 
+
+/*---- calculator -----*/
+
 const numberButtons = document.querySelectorAll('[data-number]');
 const operationButtons = document.querySelectorAll('[data-operation]');
 const equalButton = document.querySelector('.button--equal');
@@ -14,7 +17,7 @@ numberButtons.forEach(button => {   //for each button execute the function
     button.addEventListener('click', () => {    //every time there is a click in the button execute the function
         calc.addNumber(button.innerText);
         calc.updateDisplay(currentOperandTextElement,previousOperandTextElement);
-        console.log(calc.currentOperand);
+        //console.log(calc.currentOperand);
     });
 });
 
@@ -38,4 +41,34 @@ resetButton.addEventListener('click', (button) => {
 deleteButton.addEventListener('click', (button) => {
     calc.delete();
     calc.updateDisplay(currentOperandTextElement,previousOperandTextElement);
+});
+
+
+
+/*----toggle-----*/
+
+const toggleButtons = document.querySelectorAll("input[type='radio']");
+
+toggleButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        let btnValue = button.value;
+        switch(btnValue) {
+            case '1':
+                console.log(1);
+                document.querySelector('body').classList = 'body theme-1';
+                break;
+            case '2':
+                console.log(2);
+                document.querySelector('body').classList = 'body theme-2';
+                break;
+            case '3':
+                    console.log(2);
+                    document.querySelector('body').classList = 'body theme-3';
+                    break;
+            default:
+                console.log(3);
+                document.querySelector('body').classList = 'body theme-1';
+        }
+        
+    });
 });

@@ -1,17 +1,62 @@
 /* theme 1 */
 /* theme 2 */
+/* theme 3 */
 /* fonts */
 /* default value global variables */
 :root {
   --main-bg: black;
+  --element-bg: black;
+  --display-bg: black;
+  --display-color: black;
+  --key-bg: black;
+  --key-shadow: black;
+  --key-text-color: black;
+  --key-colored-1-bg: black;
+  --key-colored-1-shadow: black;
+  --key-colored-2-bg: black;
+  --key-colored-2-shadow: black;
 }
 
 .body.theme-1 {
   --main-bg: hsl(222deg, 26%, 31%);
+  --element-bg: hsl(223deg, 31%, 20%);
+  --display-bg: hsl(224deg, 36%, 15%);
+  --display-color: white;
+  --key-bg: hsl(30deg, 25%, 89%);
+  --key-shadow: hsl(28deg, 16%, 65%);
+  --key-text-color: black;
+  --key-colored-1-bg: hsl(225deg, 21%, 49%);
+  --key-colored-1-shadow: hsl(224deg, 28%, 35%);
+  --key-colored-2-bg: hsl(6deg, 63%, 50%);
+  --key-colored-2-shadow: hsl(6deg, 70%, 34%);
 }
 
 .body.theme-2 {
   --main-bg: hsl(0deg, 0%, 90%);
+  --element-bg: hsl(0deg, 5%, 81%);
+  --display-bg: hsl(0deg, 0%, 93%);
+  --display-color: black;
+  --key-bg: hsl(45deg, 7%, 89%);
+  --key-shadow: hsl(35deg, 11%, 61%);
+  --key-text-color: black;
+  --key-colored-1-bg: hsl(185deg, 42%, 37%);
+  --key-colored-1-shadow: hsl(185deg, 58%, 25%);
+  --key-colored-2-bg: hsl(25deg, 98%, 40%);
+  --key-colored-2-shadow: hsl(25deg, 99%, 27%);
+}
+
+.body.theme-3 {
+  --main-bg: hsl(268deg, 75%, 9%);
+  --element-bg: hsl(268deg, 71%, 12%);
+  --display-bg: hsl(268deg, 71%, 12%);
+  --display-color: hsl(52deg, 100%, 62%);
+  --key-bg: hsl(268deg, 47%, 21%);
+  --key-shadow: hsl(290deg, 70%, 36%);
+  --key-text-color: hsl(52deg, 100%, 62%);
+  --key-colored-1-bg: hsl(281deg, 89%, 26%);
+  --key-colored-1-shadow: hsl(285deg, 91%, 52%);
+  --key-colored-2-bg: hsl(176deg, 100%, 44%);
+  --key-colored-2-shadow: hsl(177deg, 92%, 70%);
 }
 
 .calculator {
@@ -29,45 +74,52 @@
   justify-content: space-between;
 }
 .calculator__name {
-  color: white;
+  color: var(--display-color);
   font-size: 1.8rem;
   font-weight: 700;
 }
 .calculator__display {
-  background-color: black;
-  border-radius: 0.5rem;
-  margin: 0 auto;
-  width: 33rem;
-  height: 5rem;
-}
-.calculator__previous-operand {
-  color: white;
-  font-size: 1.2rem;
-}
-.calculator__current-operand {
-  color: white;
-  font-size: 2rem;
-}
-.calculator__buttons {
-  background-color: black;
+  background-color: var(--display-bg);
+  border-radius: 0.75rem;
   margin: 0 auto;
   width: 30rem;
+  height: 5rem;
+  text-align: right;
   padding: 1.5rem;
+}
+.calculator__previous-operand {
+  color: var(--display-color);
+  font-size: 1rem;
+  height: 1rem;
+}
+.calculator__current-operand {
+  color: var(--display-color);
+  font-size: 3rem;
+  height: 4rem;
+}
+.calculator__buttons {
+  background-color: var(--element-bg);
+  margin: 0 auto;
+  width: 30rem;
+  padding: 2rem;
   display: grid;
   grid-template: repeat(5, 1fr)/repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.8rem;
   border-radius: 0.5rem;
 }
 .calculator__theme-control {
   display: flex;
 }
+.calculator__theme-text {
+  color: var(--display-color);
+}
 
 .button {
-  background-color: aliceblue;
-  color: black;
-  height: 3rem;
+  background-color: var(--key-bg);
+  color: var(--key-text-color);
+  height: 3.5rem;
   font-size: 2rem;
-  box-shadow: 0 0.25rem rgb(151, 151, 138);
+  box-shadow: 0 0.25rem var(--key-shadow);
   border-radius: 0.5rem;
   border: none;
 }
@@ -80,8 +132,10 @@
   box-shadow: 0 0.15rem rgb(151, 151, 138);
 }
 .button--delete, .button--reset {
-  background-color: rgb(6, 6, 158);
+  background-color: var(--key-colored-1-bg);
+  box-shadow: 0 0.25rem var(--key-colored-1-shadow);
   color: white;
+  text-transform: uppercase;
 }
 .button--delete:hover, .button--reset:hover {
   background-color: rgb(86, 86, 175);
@@ -97,7 +151,8 @@
 .button--equal {
   grid-column: 3/5;
   grid-row: 5/6;
-  background-color: rgb(158, 16, 6);
+  background-color: var(--key-colored-2-bg);
+  box-shadow: 0 0.25rem var(--key-colored-2-shadow);
   color: white;
 }
 .button--equal:hover {
@@ -126,81 +181,74 @@
 
 .multi-radio-toggle {
   position: relative;
-  background: black;
+  background: var(--element-bg);
   margin: 20px auto 80px;
-  padding: 0 !important;
+  padding: 0;
   border-radius: 50px;
-  height: 30px;
+  height: 20px;
   box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0);
   display: flex;
-  justify-content: space-between;
-}
-.multi-radio-toggle__slide-bg {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 5px;
-  border-radius: 50px;
-  transition: all 0.4s ease;
-}
-.multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg {
-  background: black;
-}
-.multi-radio-toggle input:nth-child(1):checked ~ .multi-radio-toggle__slide-bg {
-  left: 10px;
-}
-.multi-radio-toggle input:nth-child(2):checked ~ .multi-radio-toggle__slide-bg {
-  left: 40px;
-}
-.multi-radio-toggle input:nth-child(3):checked ~ .multi-radio-toggle__slide-bg {
-  left: 63px;
+  justify-content: center;
 }
 .multi-radio-toggle__label {
-  color: white;
+  color: var(--display-color);
   position: absolute;
   z-index: 99;
-  display: block;
-  margin: 0;
-  line-height: 30px;
   font-size: 16px;
-  margin: 0;
-  border-radius: 50px;
   cursor: pointer;
-  text-align: center;
-}
-.multi-radio-toggle__label p {
-  display: block;
-  margin: 0;
-  line-height: 30px;
-  font-size: 16px;
-  width: 20px;
-  height: 50px;
 }
 .multi-radio-toggle__label:nth-of-type(1) {
-  top: -25px;
-  text-align: left;
+  top: -35px;
+  left: 8px;
   width: 10px;
   height: 30px;
 }
 .multi-radio-toggle__label:nth-of-type(2) {
-  text-align: center;
-  top: -25px;
-  left: 45%;
+  top: -35px;
   width: 10px;
 }
 .multi-radio-toggle__label:nth-of-type(3) {
-  text-align: right;
   width: 10px;
-  top: -25px;
-  right: 5px;
+  top: -35px;
+  right: 8px;
+}
+.multi-radio-toggle__label p {
+  display: block;
+  font-size: 16px;
+  height: 50px;
+}
+.multi-radio-toggle__slide-bg {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 2.5px;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+}
+.multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg {
+  background: var(--key-colored-2-bg);
+}
+.multi-radio-toggle input:nth-child(1):checked ~ .multi-radio-toggle__slide-bg {
+  left: 5px;
+}
+.multi-radio-toggle input:nth-child(2):checked ~ .multi-radio-toggle__slide-bg {
+  left: 28px;
+}
+.multi-radio-toggle input:nth-child(3):checked ~ .multi-radio-toggle__slide-bg {
+  left: 49px;
 }
 .multi-radio-toggle input[type=radio] {
   display: none;
 }
 .multi-radio-toggle--three {
-  width: 90px;
+  width: 70px;
 }
 
 .body {
   background: var(--main-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

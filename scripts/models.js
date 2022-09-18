@@ -57,7 +57,7 @@ class Calculator {
         this.currentOperand = computation;
         this.operation = undefined;
         this.previousOperand = '';
-        console.log(this.currentOperand);
+        //console.log(this.currentOperand);
     }
 
     //helper function
