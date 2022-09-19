@@ -1,107 +1,90 @@
-# Frontend Mentor - Calculator app
+# Frontend Mentor - Calculator app solution
 
-![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Personal Objectives](#Personal-objectives-for-this-challenges)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+## Overview
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this calculator app and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - See the size of the elements adjust based on their device's screen size
-- Perform mathematical operations like addition, subtraction, multiplication, and division
+- Perform mathmatical operations like addition, subtraction, multiplication, and division
 - Adjust the color theme based on their preference
 - **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./screenshots//Screenshot.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
-
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
-
-## Building your project
-
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
-
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
-
-
-
-# things to do
-- click efect on button using box-shadow property
-
-# Objectives for this challenges
+### Personal objectives for this challenges
 - use sass
 - learn to use grid ( for the buttons)
-- learn to use mixins for responsive(media queries): https://www.youtube.com/watch?v=1334bFDilgk&ab_channel=FrontDev
+- learn to use mixins for responsive(media queries)
+
+### Built with
+- html
+- javascript
+- Sass
+- Flexbox
+- CSS Grid
+- [Normalize scss](https://github.com/kristerkari/normalize.scss) - sass version of Normalize
+
+### What I learned
+
+- use of grid for keys matrix
+- the use of data attributes to get all the keys easily
+- the use of javascript class with ES6 sintax
+- to name nested elements with BEM grandchild elements aproach (insted of chaining elements)
+- click efect on button using box-shadow property
+- use js as a module type, and the necesity of a web server for use this js as modules
+- use of sass interpolation and variables for grandparent selector (https://codeburst.io/how-to-do-sass-grandparent-selectors-b8666dcaf961)
+- to pass a sass variable to a css variable we need to use #{$sass-variable}    (https://github.com/sass/sass/issues/1128) 
+                                                                                (https://sass-lang.com/documentation/breaking-changes/css-vars)
+                                                                                (https://medium.com/@xzyfer/why-node-sass-broke-your-code-and-semver-1b3e409c57b9)
+- Use box-sizing: border-box; so that the padding does not increase the size of the div
+
+
+### Useful resources
+
+- https://www.youtube.com/watch?v=j59qQ7YWLxw&ab_channel=WebDevSimplified (how to build a calculator with js)
+- https://scalablecss.com/bem-nesting-grandchild-elements/ (what to do with nested elements in BEM)
+- https://www.javascripttutorial.net/es6/javascript-class/#:~:text=A%20JavaScript%20class%20is%20a,classes%20are%20just%20special%20functions. (js classes)
+- https://stackoverflow.com/questions/19030742/difference-between-innertext-innerhtml-and-value#:~:text=Both%20innerText%20and%20innerHTML%20return,content%20of%20the%20HTML%20element. (difference between innerHTML(innerHTML renders html code if its inside a string) and innerText(not render html code inside the string))
+- https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder
+- https://codepen.io/renddrew/pen/bRomab
+- change themes toggle: https://codepen.io/renddrew/pen/bRomab (https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder)
+- https://www.youtube.com/watch?v=1334bFDilgk&ab_channel=FrontDev
+
+
+## Author
+
+- Frontend Mentor - [@alexgcode](https://www.frontendmentor.io/profile/alexgcode)
+- Linkedin - [@alexgcode](https://www.linkedin.com/in/alex-martin-garcia-farfan-96a901120/)
+
 
 # Resources
 - https://www.youtube.com/watch?v=j59qQ7YWLxw&ab_channel=WebDevSimplified (how to build a calculator with js)
@@ -111,19 +94,17 @@ This challenge is completely free. Please share it with anyone who will find it 
 - https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder
 - https://codepen.io/renddrew/pen/bRomab
 - change themes toggle: https://codepen.io/renddrew/pen/bRomab (https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder)
+- https://www.youtube.com/watch?v=1334bFDilgk&ab_channel=FrontDev
 
 # what I learn in the process
 - first use of grid for keys matrix
 - the use of data attributes to get all the keys easily
 - the use of javascript class with ES6 sintax
-- how to name nested elements with BEM grandchild elements aproach (insted of chaining elements)
+- to name nested elements with BEM grandchild elements aproach (insted of chaining elements)
+- click efect on button using box-shadow property
 - use js as a module type, and the necesity of a web server for use this js as modules
 - use of sass interpolation and variables for grandparent selector (https://codeburst.io/how-to-do-sass-grandparent-selectors-b8666dcaf961)
 - to pass a sass variable to a css variable we need to use #{$sass-variable}    (https://github.com/sass/sass/issues/1128) 
                                                                                 (https://sass-lang.com/documentation/breaking-changes/css-vars)
                                                                                 (https://medium.com/@xzyfer/why-node-sass-broke-your-code-and-semver-1b3e409c57b9)
 - Use box-sizing: border-box; so that the padding does not increase the size of the div
-
-# TODO
-- responsive 
-- load typography
