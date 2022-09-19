@@ -92,7 +92,7 @@ $font-white: hsl(0, 0, 100%);
 
     --key-bg: #{$key-theme-2};
     --key-shadow: #{$key-shadow-theme-2};
-    --key-text-color: black;
+    --key-text-color: hsl(60, 10%, 19%);
 
     --key-colored-1-bg: #{$key-colored-1-theme-2};
     --key-colored-1-shadow: #{$key-colored-1-shadow-theme-2};
@@ -121,6 +121,7 @@ $font-white: hsl(0, 0, 100%);
 /* --- breakpoints ---*/
 
 $breakpoints: (
+    ssm: 320px,
     sm: 540px,
     md: 768px,
     lg: 1024px,

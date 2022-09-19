@@ -40,7 +40,7 @@
   --display-color: black;
   --key-bg: hsl(45deg, 7%, 89%);
   --key-shadow: hsl(35deg, 11%, 61%);
-  --key-text-color: black;
+  --key-text-color: hsl(60, 10%, 19%);
   --key-colored-1-bg: hsl(185deg, 42%, 37%);
   --key-colored-1-shadow: hsl(185deg, 58%, 25%);
   --key-colored-2-bg: hsl(25deg, 98%, 40%);
@@ -306,11 +306,21 @@ input[type=checkbox], input[type=radio] {
   font-weight: 700;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--key-text-color);
+}
+
+.attribution a {
+  color: white;
+}
+
 .calculator {
   display: grid;
   grid-template: 3fr/1fr;
-  gap: 2rem;
-  width: min(100% - 3rem, 30rem);
+  gap: 1.8rem;
+  width: min(100% - 3rem, 33rem);
 }
 .calculator__header {
   background-color: none;
@@ -331,27 +341,51 @@ input[type=checkbox], input[type=radio] {
   box-sizing: border-box;
   border-radius: 0.75rem;
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   text-align: right;
-  padding: 1.5rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 540px) {
+  .calculator__display {
+    height: 8rem;
+    padding: 1.5rem;
+  }
 }
 .calculator__previous-operand {
   color: var(--display-color);
-  font-size: 1rem;
+  font-size: 0.7rem;
   height: 1rem;
+}
+@media screen and (min-width: 540px) {
+  .calculator__previous-operand {
+    height: 1rem;
+  }
 }
 .calculator__current-operand {
   color: var(--display-color);
-  font-size: 3rem;
-  height: 4rem;
+  font-size: 3.5rem;
+  height: 3rem;
+}
+@media screen and (min-width: 540px) {
+  .calculator__current-operand {
+    height: 4rem;
+  }
 }
 .calculator__buttons {
   background-color: var(--element-bg);
-  padding: 2rem;
+  width: 100%;
+  padding: 1.5rem;
   display: grid;
   grid-template: repeat(5, 1fr)/repeat(4, 1fr);
-  gap: 1.8rem;
+  gap: 0.8rem;
   border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 540px) {
+  .calculator__buttons {
+    gap: 1.8rem;
+    padding: 2rem;
+  }
 }
 .calculator__theme-control {
   display: flex;
@@ -369,13 +403,18 @@ input[type=checkbox], input[type=radio] {
 .button {
   background-color: var(--key-bg);
   color: var(--key-text-color);
-  height: 3.5rem;
+  height: 3.9rem;
   font-size: 2rem;
   box-shadow: 0 0.25rem var(--key-shadow);
   border-radius: 0.5rem;
   border: none;
   font-family: "League Spartan";
   font-weight: 700;
+}
+@media screen and (min-width: 540px) {
+  .button {
+    height: 3.5rem;
+  }
 }
 .button:hover {
   background-color: white;
@@ -390,9 +429,15 @@ input[type=checkbox], input[type=radio] {
   box-shadow: 0 0.25rem var(--key-colored-1-shadow);
   color: white;
   text-transform: uppercase;
+  font-size: 1.3rem;
 }
 .button--delete:hover, .button--reset:hover {
   background-color: rgb(86, 86, 175);
+}
+@media screen and (min-width: 540px) {
+  .button--delete, .button--reset {
+    font-size: 2rem;
+  }
 }
 .button--delete {
   grid-column: 4/5;
@@ -408,9 +453,15 @@ input[type=checkbox], input[type=radio] {
   background-color: var(--key-colored-2-bg);
   box-shadow: 0 0.25rem var(--key-colored-2-shadow);
   color: white;
+  font-size: 1.3rem;
 }
 .button--equal:hover {
   background-color: rgb(175, 86, 86);
+}
+@media screen and (min-width: 540px) {
+  .button--equal {
+    font-size: 2rem;
+  }
 }
 .button--plus {
   grid-column: 4/5;

@@ -9,3 +9,12 @@
     font-family: $font-main;
     font-weight:  $font-weight;
 }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--key-text-color);
+}
+.attribution a { 
+    color: white;
+}
