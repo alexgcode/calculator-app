@@ -32,6 +32,9 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshots//Screenshot.png)
+![](./screenshots//Screenshot2.png)
+![](./screenshots//Screenshot3.png)
+
 
 ### Links
 
@@ -76,7 +79,7 @@ Users should be able to:
 - https://stackoverflow.com/questions/19030742/difference-between-innertext-innerhtml-and-value#:~:text=Both%20innerText%20and%20innerHTML%20return,content%20of%20the%20HTML%20element. (difference between innerHTML(innerHTML renders html code if its inside a string) and innerText(not render html code inside the string))
 - https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder
 - https://codepen.io/renddrew/pen/bRomab
-- change themes toggle: https://codepen.io/renddrew/pen/bRomab (https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder)
+- https://codepen.io/renddrew/pen/bRomab, https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder (change themes toggle)
 - https://www.youtube.com/watch?v=1334bFDilgk&ab_channel=FrontDev
 
 
