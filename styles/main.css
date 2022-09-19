@@ -19,7 +19,7 @@
   --key-colored-2-shadow: black;
 }
 
-.body.theme-1 {
+.main.theme-1 {
   --main-bg: hsl(222deg, 26%, 31%);
   --element-bg: hsl(223deg, 31%, 20%);
   --display-bg: hsl(224deg, 36%, 15%);
@@ -33,7 +33,7 @@
   --key-colored-2-shadow: hsl(6deg, 70%, 34%);
 }
 
-.body.theme-2 {
+.main.theme-2 {
   --main-bg: hsl(0deg, 0%, 90%);
   --element-bg: hsl(0deg, 5%, 81%);
   --display-bg: hsl(0deg, 0%, 93%);
@@ -47,7 +47,7 @@
   --key-colored-2-shadow: hsl(25deg, 99%, 27%);
 }
 
-.body.theme-3 {
+.main.theme-3 {
   --main-bg: hsl(268deg, 75%, 9%);
   --element-bg: hsl(268deg, 71%, 12%);
   --display-bg: hsl(268deg, 71%, 12%);
@@ -294,7 +294,7 @@ input[type=checkbox], input[type=radio] {
   padding: 0;
 }
 
-.body {
+.main {
   background: var(--main-bg);
   height: 100vh;
   display: flex;

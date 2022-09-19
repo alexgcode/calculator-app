@@ -55,19 +55,19 @@ toggleButtons.forEach(button => {
         switch(btnValue) {
             case '1':
                 console.log(1);
-                document.querySelector('body').classList = 'body theme-1';
+                document.querySelector('main').classList = 'main theme-1';
                 break;
             case '2':
                 console.log(2);
-                document.querySelector('body').classList = 'body theme-2';
+                document.querySelector('main').classList = 'main theme-2';
                 break;
             case '3':
                     console.log(2);
-                    document.querySelector('body').classList = 'body theme-3';
+                    document.querySelector('main').classList = 'main theme-3';
                     break;
             default:
                 console.log(3);
-                document.querySelector('body').classList = 'body theme-1';
+                document.querySelector('main').classList = 'main theme-1';
         }
         
     });

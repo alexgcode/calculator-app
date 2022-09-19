@@ -67,7 +67,7 @@ $font-white: hsl(0, 0, 100%);
 }
 
 
-.body.theme-1 {
+.main.theme-1 {
     --main-bg: #{$main-theme-1};    //hsl(222, 26%, 31%);
     --element-bg: #{$element-theme-1};
     --display-bg: #{$display-theme-1};
@@ -84,7 +84,7 @@ $font-white: hsl(0, 0, 100%);
     --key-colored-2-shadow: #{$key-colored-2-shadow-theme-1};
 }
 
-.body.theme-2 {
+.main.theme-2 {
     --main-bg: #{$main-theme-2};
     --element-bg: #{$element-theme-2};
     --display-bg: #{$display-theme-2};
@@ -101,7 +101,7 @@ $font-white: hsl(0, 0, 100%);
     --key-colored-2-shadow: #{$key-colored-2-shadow-theme-2};
 }
 
-.body.theme-3 {
+.main.theme-3 {
     --main-bg: #{$main-theme-3};
     --element-bg: #{$element-theme-3};
     --display-bg: #{$display-theme-3};
