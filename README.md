@@ -83,6 +83,7 @@ Users should be able to:
 
 ## TO DO
 - remake the toggle button without the p tag inside the label
+- read about use of prel attribute on js scripts and erro with type module
 
 ## Author
 
