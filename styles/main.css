@@ -3,6 +3,7 @@
 /* theme 3 */
 /* fonts */
 /* default value global variables */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 :root {
   --main-bg: black;
   --element-bg: black;
@@ -59,13 +60,24 @@
   --key-colored-2-shadow: hsl(177deg, 92%, 70%);
 }
 
+.body {
+  background: var(--main-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  font-family: "League Spartan";
+  font-weight: 700;
+}
+
 .calculator {
   display: grid;
   grid-template: 3fr/1fr;
   gap: 2rem;
 }
 .calculator__header {
-  background-color: darkblue;
+  background-color: none;
   border-radius: 0.5rem;
   margin: 0 auto;
   width: 33rem;
@@ -77,12 +89,13 @@
   color: var(--display-color);
   font-size: 1.8rem;
   font-weight: 700;
+  align-self: center;
 }
 .calculator__display {
   background-color: var(--display-bg);
   border-radius: 0.75rem;
   margin: 0 auto;
-  width: 30rem;
+  width: 31rem;
   height: 5rem;
   text-align: right;
   padding: 1.5rem;
@@ -100,7 +113,7 @@
 .calculator__buttons {
   background-color: var(--element-bg);
   margin: 0 auto;
-  width: 30rem;
+  width: min(100% - 1rem, 30rem);
   padding: 2rem;
   display: grid;
   grid-template: repeat(5, 1fr)/repeat(4, 1fr);
@@ -112,6 +125,12 @@
 }
 .calculator__theme-text {
   color: var(--display-color);
+  align-self: flex-end;
+  padding-bottom: 0.7rem;
+  padding-right: 1.2rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
 }
 
 .button {
@@ -122,6 +141,8 @@
   box-shadow: 0 0.25rem var(--key-shadow);
   border-radius: 0.5rem;
   border: none;
+  font-family: "League Spartan";
+  font-weight: 700;
 }
 .button:hover {
   background-color: white;
@@ -185,7 +206,7 @@
   margin: 20px auto 80px;
   padding: 0;
   border-radius: 50px;
-  height: 20px;
+  height: 25px;
   box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0);
   display: flex;
   justify-content: center;
@@ -194,34 +215,34 @@
   color: var(--display-color);
   position: absolute;
   z-index: 99;
-  font-size: 16px;
+  font-size: 0.8rem;
   cursor: pointer;
 }
 .multi-radio-toggle__label:nth-of-type(1) {
-  top: -35px;
+  top: -38px;
   left: 8px;
   width: 10px;
   height: 30px;
 }
 .multi-radio-toggle__label:nth-of-type(2) {
-  top: -35px;
+  top: -38px;
   width: 10px;
 }
 .multi-radio-toggle__label:nth-of-type(3) {
   width: 10px;
-  top: -35px;
+  top: -38px;
   right: 8px;
 }
 .multi-radio-toggle__label p {
   display: block;
-  font-size: 16px;
+  font-size: 1rem;
   height: 50px;
 }
 .multi-radio-toggle__slide-bg {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 2.5px;
+  top: 5px;
   border-radius: 50px;
   transition: all 0.4s ease;
 }
@@ -242,13 +263,4 @@
 }
 .multi-radio-toggle--three {
   width: 70px;
-}
-
-.body {
-  background: var(--main-bg);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
 }/*# sourceMappingURL=main.css.map */

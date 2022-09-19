@@ -123,4 +123,4 @@ This challenge is completely free. Please share it with anyone who will find it 
 # TODO
 - change themes toggle: https://codepen.io/renddrew/pen/bRomab (https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder)
 - responsive 
-- ajust the design
+- load typography

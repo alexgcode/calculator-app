@@ -2,10 +2,13 @@
     'utils/variables';
 
 @import 
+    'base/base',
+    'base/typography';
+
+@import 
     'components/calculator',
     'components/button',
     'components/toggle';
 
-@import 
-    'pages/home';
+
     

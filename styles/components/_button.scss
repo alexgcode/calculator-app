@@ -6,6 +6,8 @@
     box-shadow: 0 0.25rem var(--key-shadow);
     border-radius: 0.5rem;
     border: none;
+    font-family: $font-main;
+    font-weight: $font-weight;
 
     &:hover {
         background-color: white;
