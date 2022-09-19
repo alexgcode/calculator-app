@@ -3,7 +3,7 @@
 /* theme 3 */
 /* fonts */
 /* default value global variables */
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
 :root {
   --main-bg: black;
   --element-bg: black;
@@ -60,6 +60,7 @@
   --key-colored-2-shadow: hsl(177deg, 92%, 70%);
 }
 
+/* --- breakpoints ---*/
 .body {
   background: var(--main-bg);
   height: 100vh;
@@ -237,6 +238,7 @@
   display: block;
   font-size: 1rem;
   height: 50px;
+  font-weight: 400;
 }
 .multi-radio-toggle__slide-bg {
   width: 15px;

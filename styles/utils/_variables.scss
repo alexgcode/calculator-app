@@ -117,3 +117,11 @@ $font-white: hsl(0, 0, 100%);
     --key-colored-2-bg: #{$key-colored-2-theme-3};
     --key-colored-2-shadow: #{$key-colored-2-shadow-theme-3};
 }
+
+/* --- breakpoints ---*/
+
+$breakpoints: (
+    sm: 540px,
+    md: 768px,
+    lg: 1024px
+);

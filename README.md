@@ -108,6 +108,8 @@ This challenge is completely free. Please share it with anyone who will find it 
 - https://scalablecss.com/bem-nesting-grandchild-elements/ (what to do with nested elements in BEM)
 - https://www.javascripttutorial.net/es6/javascript-class/#:~:text=A%20JavaScript%20class%20is%20a,classes%20are%20just%20special%20functions. (js classes)
 - https://stackoverflow.com/questions/19030742/difference-between-innertext-innerhtml-and-value#:~:text=Both%20innerText%20and%20innerHTML%20return,content%20of%20the%20HTML%20element. (difference between innerHTML(innerHTML renders html code if its inside a string) and innerText(not render html code inside the string))
+- https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder
+- https://codepen.io/renddrew/pen/bRomab
 
 # what I learn in the process
 - first use of grid for keys matrix
