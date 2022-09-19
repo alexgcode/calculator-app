@@ -83,6 +83,9 @@ Users should be able to:
 - https://www.youtube.com/watch?v=1334bFDilgk&ab_channel=FrontDev
 
 
+## TO DO
+- remake the toggle button without the p tag inside the label
+
 ## Author
 
 - Frontend Mentor - [@alexgcode](https://www.frontendmentor.io/profile/alexgcode)
