@@ -110,6 +110,7 @@ This challenge is completely free. Please share it with anyone who will find it 
 - https://stackoverflow.com/questions/19030742/difference-between-innertext-innerhtml-and-value#:~:text=Both%20innerText%20and%20innerHTML%20return,content%20of%20the%20HTML%20element. (difference between innerHTML(innerHTML renders html code if its inside a string) and innerText(not render html code inside the string))
 - https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder
 - https://codepen.io/renddrew/pen/bRomab
+- change themes toggle: https://codepen.io/renddrew/pen/bRomab (https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder)
 
 # what I learn in the process
 - first use of grid for keys matrix
@@ -121,8 +122,8 @@ This challenge is completely free. Please share it with anyone who will find it 
 - to pass a sass variable to a css variable we need to use #{$sass-variable}    (https://github.com/sass/sass/issues/1128) 
                                                                                 (https://sass-lang.com/documentation/breaking-changes/css-vars)
                                                                                 (https://medium.com/@xzyfer/why-node-sass-broke-your-code-and-semver-1b3e409c57b9)
+- Use box-sizing: border-box; so that the padding does not increase the size of the div
 
 # TODO
-- change themes toggle: https://codepen.io/renddrew/pen/bRomab (https://www.youtube.com/watch?v=-3WV1CjeF10&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=5&ab_channel=CoderCoder)
 - responsive 
 - load typography
