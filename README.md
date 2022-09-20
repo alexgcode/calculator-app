@@ -67,7 +67,7 @@ Users should be able to:
                                                                                 (https://sass-lang.com/documentation/breaking-changes/css-vars)
                                                                                 (https://medium.com/@xzyfer/why-node-sass-broke-your-code-and-semver-1b3e409c57b9)
 - Use box-sizing: border-box; so that the padding does not increase the size of the div
-
+- Looks like there is no need to use defer attribute of js script when the js file is a module type, because is deferred by default. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
 ### Useful resources
 
@@ -83,7 +83,6 @@ Users should be able to:
 
 ## TO DO
 - remake the toggle button without the p tag inside the label
-- read about use of prel attribute on js scripts and erro with type module
 
 ## Author
 
